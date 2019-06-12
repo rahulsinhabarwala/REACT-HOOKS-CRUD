@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{ useState, useEffect}  from 'react';
 
 const UserTable =(props)=> {
+    //console.log("usertable",props.editRow.user)
     return (
     <table>
         <thead>
@@ -25,8 +26,7 @@ const UserTable =(props)=> {
                 <tr>
                     <td colSpan={3}>No Users</td>
                 </tr>
-            )}
-       
+            )}   
         </tbody>
     </table>
     )
