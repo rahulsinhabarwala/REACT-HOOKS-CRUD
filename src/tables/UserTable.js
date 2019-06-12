@@ -1,11 +1,11 @@
-import React,{ useState, useEffect}  from 'react';
+import React from 'react';
 
 const UserTable =(props)=> {
-    //console.log("usertable",props.editRow.user)
     return (
     <table>
         <thead>
         <tr>
+            <th>Id</th>
             <th>Name</th>
             <th>Username</th>
             <th>Actions</th>
@@ -14,6 +14,7 @@ const UserTable =(props)=> {
         <tbody>
             {props.users.length>0?(props.users.map(user => (
                  <tr key={user.id}>
+                 <td>{user.id}</td>
                  <td>{user.name}</td>
                  <td>{user.username}</td>
                  <td>
